@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personas, Empleados y Clientes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Incluye tu CSS aquí -->
+</head>
+<body>
+    <div id="spinner" class="spinner" style="display:none;">Cargando...</div>
+
+    <div id="formulario-lista">
+        <h1>Lista de Personas, Empleados y Clientes</h1>
+        <table id="tabla-personas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Ventas</th>
+                    <th>Sueldo</th>
+                    <th>Compras</th>
+                    <th>Teléfono</th>
+                    <th>Modificar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla">
+            </tbody>
+        </table>
+    </div>
+    <button id="abrirForm" onclick="abrirFormulario()">Abrir formulario</button>
+    <div id="formulario-abm" style="display:none;">
+        <h1 id="accion-titulo">Alta</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" required>
+            <option value="empleado">Ninguno</option>
+            <option value="empleado">Empleado</option>
+            <option value="cliente">Cliente</option>
+        </select>
+        <div id="empleado-fields" style="display:none;">
+            <label for="sueldo">Sueldo:</label>
+            <input type="number" id="sueldo">
+            <label for="ventas">Ventas:</label>
+            <input type="number" id="ventas">
+        </div>
+        <div id="cliente-fields" style="display:none;">
+            <label for="compras">Compras:</label>
+            <input type="number" id="compras">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono">
+        </div>
+        <button id="aceptar" onclick="guardarElemento()">Aceptar</button>
+        <button id="cancelar" onclick="cerrarFormulario()">Cancelar</button>
+    </div>
+    
+    
+
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>
