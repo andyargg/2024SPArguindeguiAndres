@@ -1,19 +1,86 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
+/* styles.css */
 
-#spinner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+body {
+    font-family: Roboto, sans-serif; /* Fuente típica de Material Design */
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
-    font-size: 2em;
-    color: black;
-}
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Fondo gris claro común en Material Design */
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos adicionales para los botones, formularios, etc. */
+  button {
+    padding: 10px 20px;
+    background-color: #2196F3; /* Azul primario de Material Design */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ... otros estilos para personalizar */
+  #formulario-abm {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  #formulario-abm label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  #formulario-abm input,
+  #formulario-abm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #empleado-fields,
+  #cliente-fields {
+    margin-top: 16px;
+  }
+  
+  /* Estilos para los botones */
+  #aceptar,
+  #cancelar,
+  #btnConfirmarEliminacion {
+    padding: 10px 20px;
+    background-color: #2196F3; /* Azul primario de Material Design */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  #btnConfirmarEliminacion {
+    background-color: #f44336; /* Rojo para acciones destructivas */
+  }

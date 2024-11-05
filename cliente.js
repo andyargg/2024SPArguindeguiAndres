@@ -8,7 +8,7 @@ export class Cliente extends Persona {
     }
 
     toString() {
-        return `${super.toString()}, Compras: ${this.compras}, Teléfono: ${this.telefono}`;
+        return `${super.toString()}, Compras: ${compras}, Teléfono: ${this.telefono}`;
     }
 
     toJson() {
