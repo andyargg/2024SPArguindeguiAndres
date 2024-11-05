@@ -1,14 +1,13 @@
-/* styles.css */
 
 body {
-    font-family: Roboto, sans-serif; /* Fuente típica de Material Design */
+    font-family: Roboto, sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f5f5f5; /* Fondo gris claro común en Material Design */
+    background-color: #f5f5f5; /
   }
   
   .container {
@@ -30,10 +29,9 @@ body {
     border-bottom: 1px solid #ddd;
   }
   
-  /* Estilos adicionales para los botones, formularios, etc. */
   button {
     padding: 10px 20px;
-    background-color: #2196F3; /* Azul primario de Material Design */
+    background-color: #2196F3;
     color: white;
     border: none;
     border-radius: 4px;
